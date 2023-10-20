@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+}
+
+.sayfa{
+    display: grid;
+    min-height: 100vh;
+    grid-template:
+    "head head" 
+    "solust sagust"
+    "solalt sagust"
+    "solalt sagust"
+    "solalt sagust"
+    "solalt sagalt" 
+    "footer footer"
+    "footer footer"
+    ;
+    grid-gap: 10px;
+    padding: 15px;
+    
+    
+    
+}
+header{
+    display: grid;
+    background-color: blue;
+    grid-area: head;
+    /* height: 150px; */
+}
+.solust{
+    background-color: green ;
+    grid-area: solust;
+    /* height: 150px; */
+}
+.sagust{
+    background-color: blue;
+    grid-area: sagust;
+    /* height: 500px; */
+}
+.sagalt{
+    background-color: green;
+    grid-area: sagalt;
+    /* height: 150px; */
+}
+.solalt{
+    background-color: blue;
+    grid-area: solalt;
+    /* height: 500px; */
+}
+footer{
+    background-color: green;
+    grid-area: footer;
+    /* height: 150px; */
+}
